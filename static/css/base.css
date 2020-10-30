@@ -10,6 +10,7 @@ h1 {
 
 p {
     color: black;
+    margin: 5px;
 }
 
 .footer {
@@ -18,3 +19,13 @@ p {
     bottom: 1px;
     width: 100%;
 }
+
+button {
+    margin: 5px;
+}
+
+.del-button {
+    margin: 30px;
+}
+
+
