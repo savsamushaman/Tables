@@ -1,16 +1,7 @@
-/**
-* Template Name: Restaurantly - v1.1.0
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
-
-/*MY CSS*/
 
 
 body {
@@ -43,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: #1a1814;
+    background: #FFE4B5;
 }
 
 #preloader:before {
@@ -51,14 +42,14 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: calc(50% - 30px);
     left: calc(50% - 30px);
-    border: 6px solid #1a1814;
-    border-top-color: #cda45e;
-    border-bottom-color: #cda45e;
+    border: 6px solid #FFE4B5;
+    border-top-color: black;
+    border-bottom-color: black;
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    -webkit-animation: animate-preloader 1s linear infinite;
-    animation: animate-preloader 1s linear infinite;
+    -webkit-animation: animate-preloader 100ms linear infinite;
+    animation: animate-preloader 500ms linear infinite;
 }
 
 @-webkit-keyframes animate-preloader {
