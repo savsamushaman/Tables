@@ -15,3 +15,4 @@ function getCookie(name) {
 }
 
 const csrftoken = getCookie('csrftoken');
+

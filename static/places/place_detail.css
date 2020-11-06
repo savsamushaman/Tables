@@ -628,17 +628,25 @@ section {
     background: #6a511e;
     border: 0;
     padding: 10px 35px;
-    color: white;
+    color: black;
+    font-weight: 600;
     transition: 0.4s;
     border-radius: 50px;
-    margin-left: 40%;
+    margin-left: 26%;
     margin-top: 5px;
+    width: 230px;
+
 }
 
 #add-to-tray:hover {
     background: red;
-
 }
+
+#add-to-tray:focus {
+    outline: none;
+}
+
+
 
 /*ABOUT #######################################*/
 

@@ -1,6 +1,4 @@
-console.log('LOG')
-
-const addButtons = document.getElementsByClassName('update_button')
+console.log('listener_to_buttons.js loaded')
 
 
 const sendHttpRequest = (method, url, data) => {
@@ -8,41 +6,48 @@ const sendHttpRequest = (method, url, data) => {
         method: method,
         body: JSON.stringify(data),
         headers: {'content-type': 'application/json', 'X-CSRFToken': csrftoken}
-
     })
 }
 
-for (let i = 0; i < addButtons.length; i++) {
-    addButtons[i].addEventListener('click', function () {
-        let productId = this.dataset.productid
-        let action = this.dataset.action
+function add_remove_functionality() {
 
-        sendHttpRequest('POST', '/tray/update_tray/', {'id': productId, 'action': action})
-            .then(response => {
-                return response.json()
-            })
-            .then(responseData => {
+    let addButtons = document.getElementsByClassName('update_button')
 
-                let all_buttons = document.querySelectorAll(`[data-productid=${CSS.escape(productId)}]`);
+    for (let i = 0; i < addButtons.length; i++) {
+        addButtons[i].addEventListener('click', function () {
 
-                for (let element = 0; element < all_buttons.length; element++) {
-                    if (responseData['new_value'] === 0) {
+            let data = {
+                id: this.dataset.productid,
+                action: this.dataset.action
+            };
 
-                        document.getElementById(productId).remove()
-                        location.reload()
+            sendHttpRequest('POST', '/tray/update_tray/', data)
+                .then(response => {
+                    return response.json()
+                })
 
-                    } else if (responseData['new_value'] > 0)
+                .then(responseData => {
 
-                        all_buttons[element].innerText = responseData['new_value']
-                }
+                    let all_buttons = document.querySelectorAll(`[data-productid=${CSS.escape(data.id)}]`);
+
+                    for (let element = 0; element < all_buttons.length; element++) {
+                        if (responseData['new_value'] === 0) {
+
+                            document.getElementById(data.id).remove()
+                            location.reload()
+
+                        } else if (responseData['new_value'] > 0)
+
+                            all_buttons[element].innerText = responseData['new_value']
+                    }
 
 
-
-            })
-
+                })
 
 
-    })
+        })
+    }
 }
 
-document.querySelector('[data-product]')
+add_remove_functionality()
+
