@@ -7,7 +7,7 @@
 
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     background: #FFE4B5;
     color: #fff;
 }
@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-    color: coral;
+    color: orangered;
     text-decoration: none;
 }
 
@@ -75,6 +75,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
 .back-to-top {
     position: fixed;
     display: none;
@@ -91,14 +94,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 44px;
     height: 44px;
     border-radius: 50px;
-    color: #cda45e;
+    color: orangered;
     transition: all 0.4s;
-    border: 2px solid #cda45e;
+    border: 2px solid orangered;
 }
 
 .back-to-top i:hover {
-    background: #cda45e;
-    color: #1a1814;
+    background: orangered;
+    color: black;
 }
 
 /*--------------------------------------------------------------
@@ -186,11 +189,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
+    font-family: "Playfair Display", serif;
 }
 
 #header .logo a {
-    color: #fff;
+    color: #FFE4B5;
 }
 
 #header .logo img {
@@ -221,14 +224,15 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
     display: block;
     position: relative;
-    color: white;
+    color: #FFE4B5;
     transition: 0.3s;
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
+    font-size: 27px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-    color: #d9ba85;
+    color: whitesmoke;
 }
 
 .nav-menu .book-a-table a {
@@ -543,26 +547,28 @@ section {
     border-radius: 30px;
     padding: 12px 15px;
     transition: 0.3s;
-    color: coral;
+    color: black;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 23px;
     text-align: center;
+    font-family: "Playfair Display" ,sans-serif ;
+    max-width: 250px;
+    word-wrap:break-word;
+    margin-bottom: 5px;
+
 
 
 }
 
+
 .places .nav-link:hover {
-    color: black;
+    color: orangered;
 }
 
 .places .nav-link.active {
-    color: #1a1814;
-    background: coral;
-    border-color: coral;
-}
-
-.places .nav-link:hover {
-    border-color: coral;
+    color: black;
+    background: orangered;
+    border-color: orangered;
 }
 
 .places .tab-pane.active {
@@ -571,18 +577,23 @@ section {
 }
 
 .places .details h3 {
-    font-size: 26px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 700;
     margin-bottom: 20px;
     color: black;
     text-align: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Playfair Display", sans-serif;
+    word-wrap:break-word;
+    max-width: 500px;
+
 }
 
 .places .details p {
     color: black;
+    font-size: 20px;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
 }
 
 .places .details p:last-child {

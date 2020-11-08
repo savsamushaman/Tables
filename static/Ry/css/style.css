@@ -89,13 +89,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 44px;
     height: 44px;
     border-radius: 50px;
-    color: #cda45e;
+    color: #FFE4B5;
     transition: all 0.4s;
-    border: 2px solid #cda45e;
+    border: 2px solid #FFE4B5;
 }
 
 .back-to-top i:hover {
-    background: #cda45e;
+    background: #FFE4B5;
     color: #1a1814;
 }
 
@@ -184,11 +184,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
+    font-family: "Playfair Display", sans-serif;
 }
 
 #header .logo a {
-    color: #fff;
+    color: #FFE4B5;
 }
 
 #header .logo img {
@@ -219,14 +219,15 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
     display: block;
     position: relative;
-    color: white;
+    color: #FFE4B5;
     transition: 0.3s;
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 300;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-    color: #d9ba85;
+    color: whitesmoke;
 }
 
 .nav-menu .book-a-table a {

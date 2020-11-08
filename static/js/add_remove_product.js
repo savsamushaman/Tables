@@ -1,4 +1,4 @@
-console.log('place_details.js loaded')
+console.log('add_remove_product.js loaded')
 
 
 let add_to_tray_buttons = document.getElementsByClassName('add-to-tray')
@@ -20,7 +20,7 @@ for (let i = 0; i < add_to_tray_buttons.length; i++) {
                 if (data['action'] === 'add') {
                     button.innerText = "Remove from order"
                     button.dataset.action = 'remove'
-                    button.style.background = 'red'
+                    button.style.background = 'orangered'
                 } else if (data['action'] === 'remove') {
                     button.innerText = 'Add to order'
                     button.dataset.action = 'add'
