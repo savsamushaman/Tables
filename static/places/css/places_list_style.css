@@ -492,6 +492,7 @@ section {
 
 .section-title {
     padding-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .section-title h2 {
@@ -534,7 +535,8 @@ section {
 
 .places {
     overflow: hidden;
-    background:#FFE4B5 ;
+    background:#FFE4B5;
+    margin-top: 10vh;
 
 }
 
@@ -552,8 +554,7 @@ section {
     font-size: 23px;
     text-align: center;
     font-family: "Playfair Display" ,sans-serif ;
-    max-width: 250px;
-    word-wrap:break-word;
+    word-wrap: anywhere;
     margin-bottom: 5px;
 
 
@@ -583,8 +584,8 @@ section {
     color: black;
     text-align: center;
     font-family: "Playfair Display", sans-serif;
-    word-wrap:break-word;
-    max-width: 500px;
+    word-wrap: anywhere;
+
 
 }
 
@@ -605,8 +606,11 @@ section {
     .places .nav-link {
         border: 0;
         padding: 15px;
+
     }
 }
+
+
 
 
 

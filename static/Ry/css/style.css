@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo {
-    font-size: 50px;
+    font-size: 60px;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -221,9 +221,9 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     color: #FFE4B5;
     transition: 0.3s;
-    font-size: 24px;
+    font-size: 29px;
     font-family: "Playfair Display", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {

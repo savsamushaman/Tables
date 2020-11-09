@@ -3872,7 +3872,7 @@ body.skin-light.fixed-sn .jumbotron-header {
     transition: 0.3s;
     font-size: 29px;
     font-family: "Playfair Display", sans-serif;
-    font-weight: 300;
+    font-weight: 500; !important;
 
 }
 

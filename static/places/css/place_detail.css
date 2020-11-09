@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo {
-    font-size: 50px;
+    font-size: 60px;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -497,6 +497,7 @@ section {
 
 .section-title {
     padding-bottom: 40px;
+    margin-top: 30px;
 }
 
 .section-title h2 {
@@ -504,13 +505,13 @@ section {
     font-weight: 500;
     padding: 0;
     line-height: 1px;
-    margin: 0 0 5px 0;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: black;
     font-family: "Poppins", sans-serif;
     text-decoration: underline;
     display: contents;
+    word-wrap: anywhere;
 }
 
 .section-title h2 a {
@@ -540,12 +541,13 @@ section {
 
 /*IF YOU ADD A PAGE PART ADD CSS TOO ############################*/
 
+
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
 
 .menu {
-    margin-top: 95px;
+    margin-top: 10vh;
     background-color: #FFE4B5;
 
 }
@@ -631,7 +633,7 @@ section {
     z-index: 3;
     padding: 0 10px;
     font-weight: 600;
-    color: #6a511e;
+    color: black;
 }
 
 .menu .menu-ingredients {
@@ -655,7 +657,7 @@ section {
     margin-left: 26%;
     margin-top: 5px;
     width: 230px;
-    font-family: "Playfair Display",sans-serif;
+    font-family: "Playfair Display", sans-serif;
 
 }
 
@@ -678,7 +680,7 @@ section {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 230px;
-    font-family: "Playfair Display",sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-size: 20px;
 
 }
@@ -691,10 +693,18 @@ section {
     outline: none;
 }
 
-.free-table {
-    background-color: #FFE4B5; !important;
+.simulation {
+    margin-top: 7px
+
+
 }
 
+.simulation-button {
+    background: #FFE4B5;
+!important;
+    color: orangered;
+!important;
+}
 
 /*ABOUT #######################################*/
 
@@ -823,6 +833,13 @@ section {
 .about .content h3 {
     font-weight: 600;
     font-size: 26px;
+    word-wrap: break-word;
+
+}
+
+.about .content p {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.5em;
 }
 
 .about .content ul {
