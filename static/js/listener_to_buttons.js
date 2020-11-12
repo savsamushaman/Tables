@@ -1,13 +1,3 @@
-console.log('listener_to_buttons.js loaded')
-
-
-const sendHttpRequest = (method, url, data) => {
-    return fetch(url, {
-        method: method,
-        body: JSON.stringify(data),
-        headers: {'content-type': 'application/json', 'X-CSRFToken': csrftoken}
-    })
-}
 
 
 let addButtons = document.getElementsByClassName('update_quantity')

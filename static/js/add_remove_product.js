@@ -13,7 +13,7 @@ for (let i = 0; i < add_to_tray_buttons.length; i++) {
         }
 
         sendHttpRequest('POST', '/tray/add_remove/', data)
-            .then( () => {
+            .then(() => {
 
                 let button = document.querySelector(`[data-productid=${CSS.escape(data.id)}]`)
 
