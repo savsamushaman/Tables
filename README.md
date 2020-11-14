@@ -18,3 +18,5 @@ My primary goal is to offer a smooth and simple experience to both the customer 
 4) use pip install -r reqs.txt to install required libs/frameworks
 5) add your venv to .gitignore
 6) (optional) configure your IDE*
+
+(use countries.json to populate database with country suggestions)
