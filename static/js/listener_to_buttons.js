@@ -1,5 +1,3 @@
-
-
 let addButtons = document.getElementsByClassName('update_quantity')
 
 for (let i = 0; i < addButtons.length; i++) {
@@ -8,8 +6,10 @@ for (let i = 0; i < addButtons.length; i++) {
         let data = {
             id: this.dataset.productid,
             action: this.dataset.action,
-            price: this.dataset.price,
+
         };
+
+        let product_price = this.dataset.price
 
         sendHttpRequest('POST', '/tray/update_tray/', data)
             .then(response => {
@@ -27,7 +27,7 @@ for (let i = 0; i < addButtons.length; i++) {
                     let subtotal_val = parseFloat(subtotal_elem.innerText)
                     let grand_val = parseFloat(grand_total.innerText)
 
-                    let unit_price = parseFloat(data.price)
+                    let unit_price = parseFloat(product_price)
 
 
                     if (data.action === 'add') {

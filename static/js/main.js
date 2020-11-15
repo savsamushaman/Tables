@@ -1,3 +1,11 @@
+// UUID generator
+function uuidv4() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        let r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    });
+}
+
 function getCookie(name) {
     let cookieValue = null;
     if (document.cookie && document.cookie !== '') {
@@ -14,9 +22,9 @@ function getCookie(name) {
     return cookieValue;
 }
 
-const csrftoken = getCookie('csrftoken');
+let csrftoken = getCookie('csrftoken');
 
-
+// Send http requests with with this
 const sendHttpRequest = (method, url, data) => {
     return fetch(url, {
         method: method,
@@ -24,3 +32,13 @@ const sendHttpRequest = (method, url, data) => {
         headers: {'content-type': 'application/json', 'X-CSRFToken': csrftoken}
     })
 }
+
+// place cookie if not placed yet
+
+let device = getCookie('device')
+
+if (device === undefined || device === null) {
+    device = uuidv4()
+}
+
+document.cookie = "device=" + device + ";domain=;path=/"
