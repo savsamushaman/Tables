@@ -156,6 +156,19 @@
     return false;
   });
 
+  // Back button
+
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-arrow').fadeIn('slow');
+    } else {
+      $('.back-arrow').fadeOut('slow');
+    }
+  });
+
+
+
+
   // Menu list isotope and filter
   $(window).on('load', function() {
     var menuIsotope = $('.menu-container').isotope({

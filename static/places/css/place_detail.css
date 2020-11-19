@@ -48,8 +48,8 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    -webkit-animation: animate-preloader 1s linear infinite;
-    animation: animate-preloader 1s linear infinite;
+    -webkit-animation: animate-preloader 700ms linear infinite;
+    animation: animate-preloader 700ms linear infinite;
 }
 
 @-webkit-keyframes animate-preloader {
@@ -605,9 +605,9 @@ section {
 .menu .menu-content::after {
     content: "......................................................................" "...................................................................." "....................................................................";
     position: absolute;
-    left: 20px;
+    left: 5px;
     right: 0;
-    top: -4px;
+    top: 7px;
     z-index: 1;
     color: black;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -621,6 +621,8 @@ section {
     font-weight: 700;
     color: black;
     transition: 0.3s;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.35em;
 }
 
 .menu .menu-content a:hover {
@@ -634,6 +636,7 @@ section {
     padding: 0 10px;
     font-weight: 600;
     color: black;
+    top: 7px
 }
 
 .menu .menu-ingredients {
@@ -654,7 +657,7 @@ section {
     font-weight: 600;
     transition: 0.4s;
     border-radius: 50px;
-    margin-left: 26%;
+    margin-left: 15px;
     margin-top: 5px;
     width: 230px;
     font-family: "Playfair Display", sans-serif;
@@ -763,25 +766,17 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-    background: black;
+    background-color: #FFE4B5;
     background-size: cover;
     position: relative;
     padding: 80px 0;
 }
 
-.about:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
 
 .about .about-img {
     position: relative;
     transition: .5s;
+    margin: 5px;
 }
 
 .about .about-img img {
@@ -833,13 +828,22 @@ section {
 .about .content h3 {
     font-weight: 600;
     font-size: 26px;
-    word-wrap: break-word;
+    word-wrap: anywhere;
+    text-align: center;
+    color: black;
+    margin-top: 5px;
 
 }
 
 .about .content p {
     font-family: "Playfair Display", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    color: black;
+    word-wrap: anywhere;
+    text-align: center;
+    padding: 20px;
+
+
 }
 
 .about .content ul {
@@ -873,6 +877,7 @@ section {
 
 #gallery {
     background-color: black;
+    padding: 25px;
 }
 
 #gallery h2 {
@@ -895,8 +900,9 @@ section {
 
 .gallery .gallery-item {
     overflow: hidden;
-    border-right: 3px solid #454035;
-    border-bottom: 3px solid #454035;
+    border: 5px solid #2b200d;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 .gallery .gallery-item img {
@@ -905,4 +911,40 @@ section {
 
 .gallery .gallery-item:hover img {
     transform: scale(1.1);
+}
+
+.bigbox {
+    box-shadow: 5px 5px 10px 5px rgba(80, 0, 0, 0.15);
+    border-radius: 50px;
+    margin: 5px;
+
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-arrow {
+    position: fixed;
+    display: none;
+    left: 15px;
+    bottom: 15px;
+    z-index: 995;
+}
+
+.back-arrow i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    color: orangered;
+    transition: all 0.4s;
+    border: 2px solid orangered;
+}
+
+.back-arrow i:hover {
+    background: orangered;
+    color: black;
 }
