@@ -237,11 +237,12 @@ iframe {
 
 .login100-form-avatar {
     display: block;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
     overflow: hidden;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .login100-form-avatar img {
@@ -549,9 +550,9 @@ iframe {
     position: relative;
     color: #FFE4B5;
     transition: 0.3s;
-    font-size: 24px!important;
+    font-size: 24px !important;
     font-family: "Playfair Display", serif;
-    font-weight: 500!important;
+    font-weight: 500 !important;
 
 }
 
@@ -803,5 +804,17 @@ iframe {
 
 #nav-head {
     font-size: 60px;
-    font-family: "Playfair Display",serif;
+    font-family: "Playfair Display", serif;
+}
+
+#form-error {
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 8px;
+
+}
+
+.errorlist {
+    text-align: center;
+
 }
