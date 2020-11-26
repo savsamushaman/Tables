@@ -162,6 +162,7 @@ a {
     color: #1abc9c;
     text-decoration: none;
     background-color: transparent;
+    display: contents;
 }
 
 a:hover {
@@ -10901,4 +10902,73 @@ form .row:first-child .floating-label-form-group {
 .cancelled {
     color: red;
     font-weight: 600;
+}
+
+#update-button {
+    background-color: orangered;
+    border-color: orangered;
+    color: black;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+#update-button:hover {
+    border-color: green;
+    background-color: green;
+}
+
+
+form {
+
+    margin-left: 25vw;
+    margin-right: 25vw;
+    border-radius: 50px;
+}
+
+.form-text {
+    font-size: 1.2em;
+}
+
+
+#country-input select {
+    max-width: 250px;
+
+}
+
+#back-button {
+    margin-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: orangered;
+    border-color: orangered;
+    color: black;
+    font-weight: 600;
+    font-size: 1.1em;
+
+
+}
+
+#back-button:hover {
+    border-color: green;
+    background-color: green;
+}
+
+.update-button {
+    border-radius: 50px;
+    background-color: orangered;
+    color: #FFE4B5;
+    margin: 5px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+     transition: all 0.4s ease;
+    font-size: 15px;
+    width: 40%;
+}
+
+.update-button:hover {
+    background-color: green;
+    color: #FFE4B5;
 }

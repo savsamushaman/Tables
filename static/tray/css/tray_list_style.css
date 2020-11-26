@@ -95,7 +95,7 @@ body.skin-light.fixed-sn .jumbotron-header {
 }
 
 .skin-light .btn-primary:focus, .skin-light .btn-primary:active, .skin-light .btn-primary.active {
-    background-color: #0d5bdc !important
+    background-color: green !important
 }
 
 .skin-light .btn-primary.dropdown-toggle {
@@ -107,7 +107,7 @@ body.skin-light.fixed-sn .jumbotron-header {
 }
 
 .skin-light .btn-primary:not([disabled]):not(.disabled).active, .skin-light .btn-primary:not([disabled]):not(.disabled):active, .skin-light .show > .btn-primary.dropdown-toggle {
-    background-color: #0d5bdc !important
+    background-color: green !important
 }
 
 .skin-light .modal-dialog .modal-header .modal-title {
@@ -3209,7 +3209,7 @@ strong {
     background: orangered;
     border: 0;
     padding: 10px 35px;
-    color: black;
+    color: #FFE4B5;
     font-weight: 600;
     transition: 0.4s;
     border-radius: 50px;

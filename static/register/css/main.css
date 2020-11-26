@@ -778,6 +778,7 @@ input {
     border-radius: 50px;
     background-color: orangered;
     color: #FFE4B5;
+    margin: 5px;
 }
 
 .register-button:hover {
@@ -787,6 +788,7 @@ input {
 #optional-div {
     text-align: right;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 #optional-text {
