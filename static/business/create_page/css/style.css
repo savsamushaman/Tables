@@ -784,7 +784,6 @@ input {
 
 .register-button:hover {
     background-color: green;
-    color: #FFE4B5;
 }
 
 #optional-div {
@@ -838,8 +837,4 @@ a {
 }
 .back-to-top {
     display: none !important;
-}
-
-.cancel-button-div {
-    text-align: center; !important;
 }

@@ -842,4 +842,35 @@ a {
 
 .cancel-button-div {
     text-align: center; !important;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+#article-table {
+
+    border-radius: 25px;
+    color: #FFE4B5;
+}
+
+#article-table th {
+    border-color: #FFE4B5;
+}
+
+#article-table td {
+    border-color: #FFE4B5;
+}
+
+#article-table td a {
+    color: orangered;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+}
+
+#article-table td a:hover {
+    text-decoration: none;
+    color: green;
+
 }

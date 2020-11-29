@@ -842,4 +842,6 @@ a {
 
 .cancel-button-div {
     text-align: center; !important;
+    margin-bottom: 25px;
+    margin-top: 10px;
 }
