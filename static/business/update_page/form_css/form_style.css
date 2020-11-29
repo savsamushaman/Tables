@@ -232,7 +232,7 @@ button {
    ========================================================================== */
 .page-wrapper {
     min-height: 100vh;
-    padding-bottom: 0!important;
+    margin-top: 15px;
 }
 
 body {
@@ -827,4 +827,14 @@ input {
 
 a {
     text-decoration: none;
+}
+
+#id_is_open_now {
+    height: 30px;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.back-to-top {
+    display: none !important;
 }

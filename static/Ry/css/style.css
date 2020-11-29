@@ -189,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo a {
     color: #FFE4B5;
+    text-decoration: none!important;
 }
 
 #header .logo img {
@@ -224,6 +225,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     font-family: "Playfair Display", sans-serif;
     font-weight: 500;
+    text-decoration: none!important;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
