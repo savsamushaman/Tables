@@ -494,3 +494,13 @@ body {
 .mobile-nav-active .mobile-nav-toggle i {
     color: #fff;
 }
+
+#alert-div {
+    border-radius: 50px;
+    color: #FFE4B5;
+    background: green;
+}
+
+#feed-button {
+    width: 100px
+}

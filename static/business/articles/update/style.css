@@ -836,12 +836,21 @@ a {
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
 .back-to-top {
     display: none !important;
 }
 
 .cancel-button-div {
-    text-align: center; !important;
+    text-align: center;
+!important;
     margin-bottom: 25px;
-    margin-top:10px;
+    margin-top: 10px;
+}
+
+#qr-code {
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+    height: 250px;
 }

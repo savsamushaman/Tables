@@ -845,3 +845,10 @@ a {
     margin-bottom: 25px;
     margin-top: 10px;
 }
+
+#alert-div {
+    border-radius: 50px;
+    color: #FFE4B5;
+    background: green;
+    text-align: center;
+}

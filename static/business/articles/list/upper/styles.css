@@ -10870,3 +10870,9 @@ form .row:first-child .floating-label-form-group {
 
 }
 
+#alert-div {
+    border-radius: 50px;
+    color: #FFE4B5;
+    background: green;
+    text-align: center;
+}
