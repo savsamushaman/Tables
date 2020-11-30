@@ -605,9 +605,8 @@ section {
 .menu .menu-content::after {
     content: "......................................................................" "...................................................................." "....................................................................";
     position: absolute;
-    left: 5px;
+    left: 1px;
     right: 0;
-    top: 7px;
     z-index: 1;
     color: black;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -622,7 +621,7 @@ section {
     color: black;
     transition: 0.3s;
     font-family: "Playfair Display", sans-serif;
-    font-size: 1.35em;
+    font-size: 17px;
 }
 
 .menu .menu-content a:hover {
@@ -636,7 +635,7 @@ section {
     padding: 0 10px;
     font-weight: 600;
     color: black;
-    top: 7px
+
 }
 
 .menu .menu-ingredients {
