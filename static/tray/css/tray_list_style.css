@@ -3279,3 +3279,11 @@ main {
 #actions-div {
     margin-bottom: 280px;
 }
+
+.bigbox {
+    box-shadow: 5px 5px 10px 5px rgba(80, 0, 0, 0.15);
+    border-radius: 50px;
+    margin: 5px;
+    text-align: center;
+
+}

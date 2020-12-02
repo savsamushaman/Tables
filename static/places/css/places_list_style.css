@@ -563,12 +563,12 @@ section {
 
 
 .places .nav-link:hover {
-    color: black;
+    color: #FFE4B5;
     background-color: orangered;
 }
 
 .places .nav-link.active {
-    color: black;
+    color: #FFE4B5;
     background: orangered;
     border-color: orangered;
 }

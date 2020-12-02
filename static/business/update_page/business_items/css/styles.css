@@ -10876,4 +10876,5 @@ form .row:first-child .floating-label-form-group {
     background: red;
     text-align: center;
     margin-top: 10px;
+    padding: 25px;
 }
