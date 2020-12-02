@@ -504,3 +504,7 @@ body {
 #feed-button {
     width: 100px
 }
+
+#feed-button:focus {
+    outline: none;
+}
