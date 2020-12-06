@@ -508,3 +508,25 @@ body {
 #feed-button:focus {
     outline: none;
 }
+
+.delete-button-div {
+    margin-bottom: 25px;
+    text-align: center; !important;
+}
+
+#delete-button {
+    background: red
+}
+
+#delete-button:hover {
+    background: green;
+}
+
+#back {
+    text-align: center;
+    font-size: 3em
+}
+
+#back:hover {
+    color: green;
+}

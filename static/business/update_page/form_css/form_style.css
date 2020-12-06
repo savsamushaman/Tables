@@ -843,3 +843,16 @@ a {
 .cancel-button-div {
     text-align: center; !important;
 }
+
+.delete-button-div {
+    margin-bottom: 25px;
+    text-align: center; !important;
+}
+
+#delete-button {
+    background: red
+}
+
+#delete-button:hover {
+    background: green;
+}
