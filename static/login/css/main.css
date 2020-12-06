@@ -818,3 +818,11 @@ iframe {
     text-align: center;
 
 }
+
+#alert-div {
+    border-radius: 50px;
+    color: #FFE4B5;
+    background: green;
+    text-align: center;
+    margin-top: 10px;
+}
