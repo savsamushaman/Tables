@@ -797,3 +797,96 @@ section {
     font-size: 17px;
 
 }
+
+label {
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+option {
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    text-transform: capitalize;
+}
+
+select {
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    text-transform: capitalize;
+}
+
+.filter-form {
+    padding: 25px
+}
+
+
+.filter-field {
+    box-shadow: 5px 5px 10px 5px rgba(80, 0, 0, 0.15);
+    border-radius: 50px;
+    border-color: #FFE4B5;
+    color: black;
+    background-color: #FFE4B5;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.1em;
+    padding-left: 15px;
+
+}
+
+.filter-field::placeholder {
+    color: rgba(34, 34, 34, 0.5);
+}
+
+.filter-field:focus {
+    background-color: #FFE4B5;
+
+}
+
+.filter-field:active {
+    background-color: #FFE4B5;
+
+}
+
+.filter-div {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.form-control:focus {
+    border-color: orangered;
+    border-width: 1px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-group input {
+    text-align: center
+}
+
+#redirect_button {
+    background: orangered;
+    border: 0;
+    padding: 10px 35px;
+    color: #FFE4B5;
+    font-weight: 600;
+    transition: 0.4s;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 17px;
+    text-transform: capitalize;
+
+}
+
+#redirect_button:hover {
+    background: green;
+}
+
+#redirect_button:focus {
+    outline: none;
+}
