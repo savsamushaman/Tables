@@ -10351,8 +10351,8 @@ button.bg-dark:focus {
     font-style: italic !important;
 }
 
-.text-white {
-    color: #fff !important;
+.text-orangered {
+    color: orangered !important;
 }
 
 .text-primary {
@@ -10769,7 +10769,7 @@ a.text-dark:hover, a.text-dark:focus {
     left: 0;
     transition: all 0.2s ease-in-out;
     opacity: 0;
-    background-color: orangered;
+
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
