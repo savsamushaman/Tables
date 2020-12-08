@@ -850,6 +850,8 @@ a {
 
     border-radius: 25px;
     color: #FFE4B5;
+    margin-top: 10px;
+    text-align: center;
 }
 
 #article-table th {
