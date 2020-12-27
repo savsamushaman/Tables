@@ -10959,3 +10959,19 @@ form .row:first-child .floating-label-form-group {
 #invite_button:focus {
     outline: none;
 }
+
+
+input[type=file] {
+    text-align-last: center;
+}
+
+.badge {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 30%;
+    background: #FFE4B5;
+    color: red;
+    font-size: 20px;
+}
