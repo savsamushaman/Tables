@@ -10873,6 +10873,7 @@ form .row:first-child .floating-label-form-group {
     box-shadow: 5px 5px 10px 5px rgba(80, 0, 0, 0.15);
     border-radius: 50px;
     padding: 10px;
+    margin-bottom: 15px !important;
 
 }
 
@@ -10894,6 +10895,13 @@ form .row:first-child .floating-label-form-group {
 
 }
 
+#order-feed-div {
+     font-size: 1.15em;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+}
+
 .paid {
     color: green;
     font-weight: 600;
@@ -10901,6 +10909,16 @@ form .row:first-child .floating-label-form-group {
 
 .cancelled {
     color: red;
+    font-weight: 600;
+}
+
+.serving {
+    color: orangered;
+    font-weight: 600;
+}
+
+.placed {
+    color: sandybrown;
     font-weight: 600;
 }
 
