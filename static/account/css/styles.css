@@ -10885,8 +10885,12 @@ form .row:first-child .floating-label-form-group {
 
 }
 
-#order-items-div p {
-    font-style: italic;
+.order-items-div p {
+    margin-bottom: 5px;
+}
+
+.display-contents {
+    display: contents;
 }
 
 #from-p {
@@ -10896,7 +10900,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 #order-feed-div {
-     font-size: 1.15em;
+    font-size: 1.15em;
     font-weight: 400;
     margin-top: 20px;
     text-align: center;
@@ -10918,7 +10922,17 @@ form .row:first-child .floating-label-form-group {
 }
 
 .placed {
-    color: sandybrown;
+    color: green;
+    font-weight: 600;
+}
+
+.unhandled {
+    color: red;
+    font-weight: 600;
+}
+
+.handled {
+    color: green;
     font-weight: 600;
 }
 
@@ -10991,6 +11005,44 @@ form {
     color: #FFE4B5;
 }
 
+.done-button {
+    border-radius: 50px;
+    background-color: green;
+    color: #FFE4B5;
+    margin: 5px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 15px;
+    width: 40%;
+}
+
+.done-button:hover {
+    background-color: orangered;
+    color: #FFE4B5;
+}
+
+.reject-button {
+    border-radius: 50px;
+    background-color: red;
+    color: #FFE4B5;
+    margin: 5px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 15px;
+    width: 40%;
+}
+
+.reject-button:hover {
+    background-color: orangered;
+    color: #FFE4B5;
+}
+
 #alert-div {
     border-radius: 50px;
     color: #FFE4B5;
@@ -11014,4 +11066,19 @@ form {
     color: white;
     font-size: 15px;
 
+}
+
+.fade-out-on-removal {
+  animation: fade 500ms steps(90) forwards;
+ -webkit-animation: fade 500ms steps(90) forwards;
+  -moz-animation: fade 500ms steps(90) forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.0;
+  }
 }
