@@ -11082,3 +11082,13 @@ form {
     opacity: 0.0;
   }
 }
+
+.order-div {
+
+    transition: opacity 1000ms;
+    will-change: opacity;
+}
+
+.order-div.faded-out {
+    opacity: 0;
+}

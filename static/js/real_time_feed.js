@@ -21,6 +21,9 @@ feedsocket.onmessage = function (e) {
     switch (data.event) {
         case 'new_order':
 
+            if (EmptyFeedH2) {
+                EmptyFeedH2.remove()
+            }
 
             const ItemsDiv = document.createElement('div')
             ItemsDiv.classList.add('order-items-div')
@@ -40,8 +43,9 @@ feedsocket.onmessage = function (e) {
             ItemsDiv.appendChild(NewOrderItems)
 
             let NewOrderDiv = document.createElement('div')
+            FeedDiv.appendChild(NewOrderDiv)
             NewOrderDiv.id = `order-${data.message['pk']}`
-            NewOrderDiv.classList.add('container', 'd-flex', 'align-items-center', 'flex-column', 'bigbox', 'order-div')
+            NewOrderDiv.classList.add('container', 'd-flex', 'align-items-center', 'flex-column', 'bigbox', 'order-div', 'faded-out')
             NewOrderDiv.innerHTML = `
 
                 <i class="fas fa-user-cog"></i>
@@ -87,11 +91,10 @@ feedsocket.onmessage = function (e) {
             newButtonsDiv.appendChild(newHandleButton)
             NewOrderDiv.appendChild(newButtonsDiv)
 
-            if (EmptyFeedH2) {
-                EmptyFeedH2.remove()
-            }
+            requestAnimationFrame(() => {
+                NewOrderDiv.classList.remove('faded-out')
+            })
 
-            FeedDiv.appendChild(NewOrderDiv)
 
             break;
         case 'handle_order_success':
