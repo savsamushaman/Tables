@@ -2,13 +2,15 @@ const slug = JSON.parse(document.getElementById('slug').textContent)
 const FeedDiv = document.getElementById('order-feed-div')
 const EmptyFeedH2 = document.getElementById('empty-feed')
 
-const feedsocket = new WebSocket(
-    'ws://'
-    + window.location.host
-    + '/ws/owned/'
-    + slug
-    + '/feed/'
-);
+const loc = window.location
+let wsStart = 'ws://'
+if (loc.protocol === 'https:') {
+    wsStart = 'wss://'
+}
+
+const endpoint = wsStart + loc.host + loc.pathname
+
+const feedsocket = new WebSocket(endpoint);
 
 feedsocket.onclose = function (e) {
     console.error('FeedSocket closed unexpectedly')
