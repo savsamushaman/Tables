@@ -10967,8 +10967,8 @@ input[type=file] {
 
 .badge {
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 12px;
+    right: 15px;
     padding: 5px 10px;
     border-radius: 30%;
     background: #FFE4B5;
