@@ -31,11 +31,11 @@ for (let i = 0; i < addButtons.length; i++) {
 
 
                     if (data.action === 'add') {
-                        subtotal_elem.innerText = (subtotal_val + unit_price).toFixed(2) + '$'
-                        grand_total.innerText = (grand_val + unit_price).toFixed(2) + '$'
+                        subtotal_elem.innerText = (subtotal_val + unit_price).toFixed(2)
+                        grand_total.innerText = (grand_val + unit_price).toFixed(2)
                     } else if (data.action === 'remove') {
-                        subtotal_elem.innerText = (subtotal_val - unit_price).toFixed(2) + "$"
-                        grand_total.innerText = (grand_val - unit_price).toFixed(2) + 'S'
+                        subtotal_elem.innerText = (subtotal_val - unit_price).toFixed(2)
+                        grand_total.innerText = (grand_val - unit_price).toFixed(2)
                     }
 
                 }
